@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/test1.dir/demo1.cpp.o  -o ../../bin/test1 -rdynamic -lmysqlpp -lmysqlclient 
