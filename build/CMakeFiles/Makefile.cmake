@@ -113,7 +113,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/test5.dir/DependInfo.cmake"
   "src/CMakeFiles/test1.dir/DependInfo.cmake"
   "src/CMakeFiles/test3.dir/DependInfo.cmake"
   "src/CMakeFiles/test2.dir/DependInfo.cmake"
+  "src/CMakeFiles/test4.dir/DependInfo.cmake"
   )

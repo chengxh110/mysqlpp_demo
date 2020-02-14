@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cxh/2019note/test/src/include -I/usr/include/mysql++ -I/usr/include/mysql 
+CXX_INCLUDES = -I/home/cxh/study-files/mysqlpp_demo/src/include -I/usr/include/mysql++ -I/usr/include/mysql 
 

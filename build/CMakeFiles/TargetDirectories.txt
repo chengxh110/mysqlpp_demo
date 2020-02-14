@@ -1,7 +1,9 @@
-/home/cxh/2019note/test/build/CMakeFiles/edit_cache.dir
-/home/cxh/2019note/test/build/CMakeFiles/rebuild_cache.dir
-/home/cxh/2019note/test/build/src/CMakeFiles/edit_cache.dir
-/home/cxh/2019note/test/build/src/CMakeFiles/test1.dir
-/home/cxh/2019note/test/build/src/CMakeFiles/test3.dir
-/home/cxh/2019note/test/build/src/CMakeFiles/test2.dir
-/home/cxh/2019note/test/build/src/CMakeFiles/rebuild_cache.dir
+/home/cxh/study-files/mysqlpp_demo/build/CMakeFiles/edit_cache.dir
+/home/cxh/study-files/mysqlpp_demo/build/CMakeFiles/rebuild_cache.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/edit_cache.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/rebuild_cache.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test5.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test1.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test3.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test2.dir
+/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test4.dir

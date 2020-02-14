@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cxh/2019note/test/src/demo2.cpp" "/home/cxh/2019note/test/build/src/CMakeFiles/test2.dir/demo2.cpp.o"
+  "/home/cxh/study-files/mysqlpp_demo/src/demo2.cpp" "/home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/test2.dir/demo2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

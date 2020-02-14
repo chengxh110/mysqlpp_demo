@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/cxh/2019note/test/src/demo3.cpp
+/home/cxh/study-files/mysqlpp_demo/src/demo3.cpp
 cmdline.h
-/home/cxh/2019note/test/src/cmdline.h
+/home/cxh/study-files/mysqlpp_demo/src/cmdline.h
 mysql++.h
 -
 iomanip

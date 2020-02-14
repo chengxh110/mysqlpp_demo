@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cxh/2019note/test
+CMAKE_SOURCE_DIR = /home/cxh/study-files/mysqlpp_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cxh/2019note/test/build
+CMAKE_BINARY_DIR = /home/cxh/study-files/mysqlpp_demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/2019note/test/build/CMakeFiles /home/cxh/2019note/test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/study-files/mysqlpp_demo/build/CMakeFiles /home/cxh/study-files/mysqlpp_demo/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/2019note/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/study-files/mysqlpp_demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named test5
+
+# Build rule for target.
+test5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5
+.PHONY : test5
+
+# fast build rule for target.
+test5/fast:
+	$(MAKE) -f src/CMakeFiles/test5.dir/build.make src/CMakeFiles/test5.dir/build
+.PHONY : test5/fast
 
 #=============================================================================
 # Target rules for targets named test1
@@ -149,6 +162,19 @@ test2/fast:
 	$(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/build
 .PHONY : test2/fast
 
+#=============================================================================
+# Target rules for targets named test4
+
+# Build rule for target.
+test4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4
+.PHONY : test4
+
+# fast build rule for target.
+test4/fast:
+	$(MAKE) -f src/CMakeFiles/test4.dir/build.make src/CMakeFiles/test4.dir/build
+.PHONY : test4/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,9 +183,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test5"
 	@echo "... test1"
 	@echo "... test3"
 	@echo "... test2"
+	@echo "... test4"
 .PHONY : help
 
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cxh/2019note/test
+CMAKE_SOURCE_DIR = /home/cxh/study-files/mysqlpp_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cxh/2019note/test/build
+CMAKE_BINARY_DIR = /home/cxh/study-files/mysqlpp_demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cxh/2019note/test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/2019note/test/build/CMakeFiles /home/cxh/2019note/test/build/src/CMakeFiles/progress.marks
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/2019note/test/build/CMakeFiles 0
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/study-files/mysqlpp_demo/build/CMakeFiles /home/cxh/study-files/mysqlpp_demo/build/src/CMakeFiles/progress.marks
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxh/study-files/mysqlpp_demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cxh/2019note/test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/test5.dir/rule:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test5.dir/rule
+.PHONY : src/CMakeFiles/test5.dir/rule
+
+# Convenience name for target.
+test5: src/CMakeFiles/test5.dir/rule
+
+.PHONY : test5
+
+# fast build rule for target.
+test5/fast:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test5.dir/build.make src/CMakeFiles/test5.dir/build
+.PHONY : test5/fast
+
+# Convenience name for target.
 src/CMakeFiles/test1.dir/rule:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test1.dir/rule
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test1.dir/rule
 .PHONY : src/CMakeFiles/test1.dir/rule
 
 # Convenience name for target.
@@ -122,12 +137,12 @@ test1: src/CMakeFiles/test1.dir/rule
 
 # fast build rule for target.
 test1/fast:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/build
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/build
 .PHONY : test1/fast
 
 # Convenience name for target.
 src/CMakeFiles/test3.dir/rule:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test3.dir/rule
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test3.dir/rule
 .PHONY : src/CMakeFiles/test3.dir/rule
 
 # Convenience name for target.
@@ -137,12 +152,12 @@ test3: src/CMakeFiles/test3.dir/rule
 
 # fast build rule for target.
 test3/fast:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/build
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/build
 .PHONY : test3/fast
 
 # Convenience name for target.
 src/CMakeFiles/test2.dir/rule:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test2.dir/rule
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test2.dir/rule
 .PHONY : src/CMakeFiles/test2.dir/rule
 
 # Convenience name for target.
@@ -152,8 +167,23 @@ test2: src/CMakeFiles/test2.dir/rule
 
 # fast build rule for target.
 test2/fast:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/build
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/build
 .PHONY : test2/fast
+
+# Convenience name for target.
+src/CMakeFiles/test4.dir/rule:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test4.dir/rule
+.PHONY : src/CMakeFiles/test4.dir/rule
+
+# Convenience name for target.
+test4: src/CMakeFiles/test4.dir/rule
+
+.PHONY : test4
+
+# fast build rule for target.
+test4/fast:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test4.dir/build.make src/CMakeFiles/test4.dir/build
+.PHONY : test4/fast
 
 demo1.o: demo1.cpp.o
 
@@ -161,7 +191,7 @@ demo1.o: demo1.cpp.o
 
 # target to build an object file
 demo1.cpp.o:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.o
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.o
 .PHONY : demo1.cpp.o
 
 demo1.i: demo1.cpp.i
@@ -170,7 +200,7 @@ demo1.i: demo1.cpp.i
 
 # target to preprocess a source file
 demo1.cpp.i:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.i
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.i
 .PHONY : demo1.cpp.i
 
 demo1.s: demo1.cpp.s
@@ -179,7 +209,7 @@ demo1.s: demo1.cpp.s
 
 # target to generate assembly for a file
 demo1.cpp.s:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.s
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test1.dir/build.make src/CMakeFiles/test1.dir/demo1.cpp.s
 .PHONY : demo1.cpp.s
 
 demo2.o: demo2.cpp.o
@@ -188,7 +218,7 @@ demo2.o: demo2.cpp.o
 
 # target to build an object file
 demo2.cpp.o:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.o
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.o
 .PHONY : demo2.cpp.o
 
 demo2.i: demo2.cpp.i
@@ -197,7 +227,7 @@ demo2.i: demo2.cpp.i
 
 # target to preprocess a source file
 demo2.cpp.i:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.i
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.i
 .PHONY : demo2.cpp.i
 
 demo2.s: demo2.cpp.s
@@ -206,7 +236,7 @@ demo2.s: demo2.cpp.s
 
 # target to generate assembly for a file
 demo2.cpp.s:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.s
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test2.dir/build.make src/CMakeFiles/test2.dir/demo2.cpp.s
 .PHONY : demo2.cpp.s
 
 demo3.o: demo3.cpp.o
@@ -215,7 +245,7 @@ demo3.o: demo3.cpp.o
 
 # target to build an object file
 demo3.cpp.o:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.o
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.o
 .PHONY : demo3.cpp.o
 
 demo3.i: demo3.cpp.i
@@ -224,7 +254,7 @@ demo3.i: demo3.cpp.i
 
 # target to preprocess a source file
 demo3.cpp.i:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.i
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.i
 .PHONY : demo3.cpp.i
 
 demo3.s: demo3.cpp.s
@@ -233,8 +263,62 @@ demo3.s: demo3.cpp.s
 
 # target to generate assembly for a file
 demo3.cpp.s:
-	cd /home/cxh/2019note/test/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.s
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test3.dir/build.make src/CMakeFiles/test3.dir/demo3.cpp.s
 .PHONY : demo3.cpp.s
+
+demo4.o: demo4.cpp.o
+
+.PHONY : demo4.o
+
+# target to build an object file
+demo4.cpp.o:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test4.dir/build.make src/CMakeFiles/test4.dir/demo4.cpp.o
+.PHONY : demo4.cpp.o
+
+demo4.i: demo4.cpp.i
+
+.PHONY : demo4.i
+
+# target to preprocess a source file
+demo4.cpp.i:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test4.dir/build.make src/CMakeFiles/test4.dir/demo4.cpp.i
+.PHONY : demo4.cpp.i
+
+demo4.s: demo4.cpp.s
+
+.PHONY : demo4.s
+
+# target to generate assembly for a file
+demo4.cpp.s:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test4.dir/build.make src/CMakeFiles/test4.dir/demo4.cpp.s
+.PHONY : demo4.cpp.s
+
+demo5.o: demo5.cpp.o
+
+.PHONY : demo5.o
+
+# target to build an object file
+demo5.cpp.o:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test5.dir/build.make src/CMakeFiles/test5.dir/demo5.cpp.o
+.PHONY : demo5.cpp.o
+
+demo5.i: demo5.cpp.i
+
+.PHONY : demo5.i
+
+# target to preprocess a source file
+demo5.cpp.i:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test5.dir/build.make src/CMakeFiles/test5.dir/demo5.cpp.i
+.PHONY : demo5.cpp.i
+
+demo5.s: demo5.cpp.s
+
+.PHONY : demo5.s
+
+# target to generate assembly for a file
+demo5.cpp.s:
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(MAKE) -f src/CMakeFiles/test5.dir/build.make src/CMakeFiles/test5.dir/demo5.cpp.s
+.PHONY : demo5.cpp.s
 
 # Help Target
 help:
@@ -243,10 +327,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... test5"
 	@echo "... test1"
 	@echo "... test3"
 	@echo "... test2"
-	@echo "... rebuild_cache"
+	@echo "... test4"
 	@echo "... demo1.o"
 	@echo "... demo1.i"
 	@echo "... demo1.s"
@@ -256,6 +342,12 @@ help:
 	@echo "... demo3.o"
 	@echo "... demo3.i"
 	@echo "... demo3.s"
+	@echo "... demo4.o"
+	@echo "... demo4.i"
+	@echo "... demo4.s"
+	@echo "... demo5.o"
+	@echo "... demo5.i"
+	@echo "... demo5.s"
 .PHONY : help
 
 
@@ -267,6 +359,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cxh/2019note/test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cxh/study-files/mysqlpp_demo/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

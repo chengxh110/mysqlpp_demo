@@ -6,12 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/home/cxh/study-files/mysqlpp_demo/src/demo2.cpp
-cmdline.h
-/home/cxh/study-files/mysqlpp_demo/src/cmdline.h
+/home/cxh/study-files/mysqlpp_demo/src/demo4.cpp
 mysql++.h
--
-iomanip
 -
 iostream
 -
@@ -19,16 +15,6 @@ iostream
 /usr/include/mysql++/beemutex.h
 exceptions.h
 /usr/include/mysql++/exceptions.h
-
-/usr/include/mysql++/cmdline.h
-common.h
-/usr/include/mysql++/common.h
-string
--
-vector
--
-assert.h
--
 
 /usr/include/mysql++/common.h
 config.h

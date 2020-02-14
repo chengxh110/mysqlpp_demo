@@ -48,7 +48,6 @@ SELECT * FROM book;
 SELECT * FROM reader;  
 
 #### 查询数据表  
-- 参考： https://www.w3school.com.cn/sql/index.asp  
 - SQL SELECT 语句  
 SELECT 列名称 FROM 表名称  
 SELECT * FROM 表名称  
@@ -102,9 +101,56 @@ mysqldump -u userName -p 源数据库 > 目标目录中的.sql文件;
 - 导入sql文件命令规则  
 mysql -u userName -p 目标数据库 < 源sql文件路径;  
 ----  
+### mysql++  
+- 核心功能点
+1、通过Mysql++类库，连接Mysql  
+2、实现对Mysql的增、删、改、查操作  
+- 连接数据库  
+通过TCP连接数据库、通过WINDOWS命名管道连接数据库、UNIX域SOCKET连接数据库  
+mysqlpp::Connection  （常用）
+TCPConnection  
+UnixDomainSocketConnection  
+WindowsNamedPipeConnection  
+- 增删改查  
+1、直接使用Query stream输入SQL语句  
+2、使用Template Query采用类似于printf的方式进行输入SQL语句  
+3、用SSQLS，通过类似于Hibernate的方式对Data Struct进行操作来操作底层数据库  
+- 遍历数据  
+1、所有数据结果行都拿出来到内存(store)  
+2、游标一样逐行操作(use)  
+3、类似于Hibernate的利用DataStruct进行直接操作的方式  
+- 类
+##### mysqlpp::Connection
+>主要的方法就是“连接”，“断开连接”，“创建某个数据库"，”drop某个数据库“（此二者是通过CREATE  DATABASE和DROP  DATABASE实现的），”查看某张 table 中的数据行数“，”关闭mysql服务等操作  
+>该类型也可以返回一个mysqlpp::Query类型，该类型主要负责查询操作。另外，当我们以后看到mysqlpp::Query的时候，我们很容易发现它的构造函数必定需要一个mysqlpp::Connection，也就是说mysqlpp::Query的所有操作，其实也就是再次调用mysqlpp::Connection的对应方法，后者再去调用mysqlpp::DBDriver来做真正的数据库操作
+##### mysqlpp:: Query  
+> 进行SQL语句的增删改查  
+##### mysqlpp::StoreQueryResult  
+> 所有数据结果行
+##### mysqlpp::UseQueryResult  
+> 游标一样逐行操作  
+##### mysqlpp::ConnectionPool  
+> 连接池  
+##### mysqlpp::OpeitonalExceptions  
+> 对于一个表示“是否需要抛出异常”的变量的包装
+
+- 核心接口
+MySql++支持三种查询： Query::execute(), Query::store(), Query::use()
+1、execute( )接口  
+用于不返回数据的查询，该函数返回一个SimpleResult对象。  
+2、exec( )接口  
+它返回一个bool值，标示执行成功与否；如果只要成功与否的标识，可以使用该接口。  
+3、store() 接口  
+用于用服务器获取数据，该函数返回一个StoreQueryResult对象。对象包含了整个查询结果，使用stl::map方式从里面取数据即可。  
+4、use()接口  
+同样用于从服务器获取数据，不过该函数返回UseQueryResult对象。相比store()而言更节省内存，该对象类似StoreQueryResult,但是不提供随机访问的特性。use查询会让服务器一次返回结果集的一行。
+5、错误码 
+Query对象的errnum()返回上次执行对应的错误代码，error()返回错误信息，affected_rows()返回受影响的行数。
+
 
 
 ----  
+### demo
 1、添加用户设置权限  
 进入数据库  
 mysql -uroot -p[password]  
@@ -123,6 +169,8 @@ cd src
 g++ -o test1 demo1.cpp -I /usr/include/mysql++/ -I /usr/include/mysql -lmysqlpp  
 g++ -o test2 demo2.cpp -I /usr/include/mysql++/ -I /usr/include/mysql -lmysqlpp  
 g++ -o test3 demo3.cpp -I /usr/include/mysql++/ -I /usr/include/mysql -lmysqlpp -lmysqlclient  
+g++ -o test4 demo4.cpp -I /usr/include/mysql++/ -I /usr/include/mysql -lmysqlpp  
+g++ -o test5 demo5.cpp -I /usr/include/mysql++/ -I /usr/include/mysql -lmysqlpp    
 
 5、cmake 编译
 mkdir build  
@@ -130,3 +178,12 @@ cd build
 cmake ..  
 make  
 cd ../bin  
+
+
+[参考]:
+- MySQL
+https://www.w3school.com.cn/sql/index.asp  
+- mysql++
+https://tangentsoft.com/mysqlpp/doc/html/userman/tutorial.html  
+
+

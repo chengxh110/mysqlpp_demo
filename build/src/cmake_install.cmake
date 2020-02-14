@@ -1,4 +1,4 @@
-# Install script for directory: /home/cxh/2019note/test/src
+# Install script for directory: /home/cxh/study-files/mysqlpp_demo/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
